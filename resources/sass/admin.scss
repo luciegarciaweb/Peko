@@ -1,0 +1,44 @@
+@import 'admin/sb-admin';
+
+#sidebar.active {
+    margin-left: -250px;
+    transition: .3s all;
+}
+
+#sidebar {
+    transition: .3s all;
+    overflow: hidden;
+    top: 55px;
+    bottom: 0;
+    z-index: 500;
+    -ms-overflow-style: none;
+}
+
+#scrollable {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: -20px;
+    z-index: 9999;
+    min-width: 200px;
+}
+
+#scrollable li a{
+    text-align: start;
+    min-width: 200px;
+}
+
+#sidebar::-webkit-scrollbar { 
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        transition: .3s all;
+        position: fixed;
+    }
+    #sidebar.active {
+        margin-left: 0;
+        transition: .3s all;
+    }
+}

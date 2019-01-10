@@ -1,0 +1,38 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Import Front
+@import 'front.scss';
+
+.table {
+  tbody {
+    tr {
+      td, th {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.img-table {
+  height: 80px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-404 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
